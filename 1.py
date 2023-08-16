@@ -4,8 +4,49 @@ try:
    import requests
    import os.path
    import sys
+   import os
 except ImportError:
    exit("install requests and try again ...")
+os.system("clear")
+
+red    = "\033[31m"
+
+blue   = "\033[34m"
+
+bold   = "\033[1m"
+
+reset  = "\033[0m"
+
+green  = "\033[32m"
+
+yellow = "\033[33m"
+
+colors = [
+
+    "\033[38;5;226m",
+
+    "\033[38;5;227m",
+
+    "\033[38;5;229m",
+
+    "\033[38;5;230m",
+
+    "\033[38;5;190m",
+
+    "\033[38;5;191m",
+
+    "\033[38;5;220m",
+
+    "\033[38;5;221m",
+
+    "\033[38;5;142m",
+
+    "\033[38;5;214m",
+
+]
+
+color1, color2, color3, color4, color5 = random.sample(colors, 5)
+
 
 banner = """
  ▒█████   ███▄    █ 
@@ -17,6 +58,19 @@ banner = """
   ░ ▒ ▒░ ░ ░░   ░ ▒░    lvtkr
 ░ ░ ░ ▒     ░   ░ ░ 
     ░ ░           ░     O&N TEAM ON TOP
+                    
+\n\033[36m┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\t
+
+   {color1}[\033[31m♥\033[0m\033[33m]Tool author  : O&N
+
+   {color1}[\033[31m♥\033[0m\033[33m]Discord     : https://discord.gg/teHyE9Tgq7
+   
+\033[36m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛\t
+
+
+︵‿︵‿୨♡୧‿︵‿︵︵‿︵‿୨♡୧‿︵‿︵︵‿︵‿୨♡୧‿︵‿︵︵‿︵‿୨♡୧
+
+                    
                     """
 
 b = '\033[31m'
