@@ -114,8 +114,11 @@ def main(__bn__):
             print()
             exit()
 
-    target_url = x("Enter the target website URL: ")
-    aox(a, target_url)
+    while True:
+        target_url = x("Enter the target website URL (or press 'q' to quit): ")
+        if target_url.lower() == 'q':
+            break
+        aox(a, target_url)
    
 if __name__ == "__main__":
     main(banner)
