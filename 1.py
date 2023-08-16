@@ -5,6 +5,7 @@ try:
    import os.path
    import sys
    import os
+   import random
 except ImportError:
    exit("install requests and try again ...")
 os.system("clear")
