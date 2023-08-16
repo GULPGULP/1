@@ -65,11 +65,11 @@ banner = f"""
                     
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\t
 
-  \033[32m[♥\]Tool author  : O&N
+  \033[31m[♥\]Tool author  : O&N
 
-   [♥\]Discord     : https://discord.gg/teHyE9Tgq7
+   [♥\]Discord     : https://discord.gg/teHyE9Tgq7\t
    
-┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
+\033[32m┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
 
 ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
@@ -115,7 +115,7 @@ def main(__bn__):
             exit()
 
     while True:
-        target_url = x("Enter the target website URL (or press 'q' to quit): ")
+        target_url = x(f"\033[31mEnter the target website URL (or press 'q' to quit): \t")
         if target_url.lower() == 'q':
             break
         aox(a, target_url)
