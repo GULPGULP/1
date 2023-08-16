@@ -65,9 +65,9 @@ banner = f"""
                     
 ┏━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┓\t
 
-  \033[32m[\033[31m♥\033[0m\033[33m]Tool author  : O&N
+  \033[32m[♥\]Tool author  : O&N
 
-   [\033[31m♥\033[0m\033[33m]Discord     : https://discord.gg/teHyE9Tgq7
+   [♥\]Discord     : https://discord.gg/teHyE9Tgq7
    
 ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 
